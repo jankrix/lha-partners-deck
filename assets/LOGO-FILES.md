@@ -13,7 +13,17 @@ Sampled background, per file:
 
 ## What the deck uses
 
-`lha-partners-logo-tight.jpg` — built from `tjnq0ztjnq0ztjnq.jpeg`: cropped tight to the artwork (region 1570×1448, plus a 26px pad) and scaled to **700×646**, ~51 KB. It's embedded directly in `index.html` as base64, so the deck stays a single file; this copy is the source.
+`lha-logo-white-transparent.png` — a white knockout of the real artwork, because all eight slides are navy and the mark has to be white. Built from `tjnq0ztjnq0ztjnq.jpeg`: cropped tight to the lockup, scaled to **800×738**, every non-white pixel forced to pure white, and the white page feathered out to alpha 0 so it composites on navy with no halo. Embedded in `index.html` as base64 so the deck stays a single file.
+
+`lha-favicon.png` — 180×180 navy tile with the white **emblem only** (not the full lockup: "LHA" plus the descriptor line are unreadable at 16px). A bare white-on-transparent favicon would be invisible in a light browser tab bar, hence the navy tile. Embedded as a data URI in the `<head>`.
+
+`lha-logo-navy-transparent.png` — the same crop in real colours (navy wordmark, amber star), background keyed transparent. For light slides, documents, invoices.
+
+`lha-partners-logo-tight.jpg` / `lha-partners-logo-markonly.jpg` — navy-on-white crops (~50 KB / ~33 KB), kept for a white-slide fallback.
+
+## A note on `gemini-svg.svg`
+
+Not usable as a brand asset. It's a **Gemini reconstruction**, not the real mark: every fill is `#000000` (no navy `#17375E`, no amber `#F59E0B`), the starburst is a straight-line 14-vertex polygon rather than the designed burst with its negative-space star, and "LHA" is a live `<text>` element in Montserrat — which falls back to a system font when the SVG is loaded as an image, since an image-loaded SVG cannot fetch web fonts. Ask whoever drew the mark for a real vector export; it would drop the deck's logo cost from ~47 KB to a couple of KB with no resolution ceiling.
 
 The tight crop is why the deck's logo box shrank to 118px (title) / 100px (closing): the old file carried ~22% empty margin on each side, this one doesn't, so a much smaller box paints the same size mark.
 
