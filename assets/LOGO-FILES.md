@@ -25,7 +25,7 @@ Sampled background, per file:
 
 Not usable as a brand asset. It's a **Gemini reconstruction**, not the real mark: every fill is `#000000` (no navy `#17375E`, no amber `#F59E0B`), the starburst is a straight-line 14-vertex polygon rather than the designed burst with its negative-space star, and "LHA" is a live `<text>` element in Montserrat — which falls back to a system font when the SVG is loaded as an image, since an image-loaded SVG cannot fetch web fonts. Ask whoever drew the mark for a real vector export; it would drop the deck's logo cost from ~47 KB to a couple of KB with no resolution ceiling.
 
-The tight crop is why the deck's logo box shrank to 118px (title) / 100px (closing): the old file carried ~22% empty margin on each side, this one doesn't, so a much smaller box paints the same size mark.
+The tight crop is why the deck's logo box is small (134px on the title, 114px on the closing): the original file carried ~22% empty margin on each side, so a much smaller box paints the same size mark.
 
 `lha-partners-logo.jpg` — the original 1408×768 export, kept for reference.
 
