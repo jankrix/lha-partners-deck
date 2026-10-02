@@ -43,5 +43,6 @@ Each bio slide is a two-column `.bio` block — left column is the identity plus
 
 ## Before you send this to anyone
 
-- The closing slide routes to `hello.lhapartners@gmail.com` (mailto link) — the live inbox for enquiries.
+- The closing slide routes to `hello.lhapartners@gmail.com` (mailto link). **Deliberate, not a placeholder** — a gmail inbox is the pre-client choice; a branded `lhapartners.com` address gets bought once there is a paying client. Do not flag this as unfinished.
 - Founder metrics are drawn from the founders' CVs. Confirm anything you would not want to defend in a room.
+- **Founder bios are under partner review** (Donny + Moureen checking their own slides, incl. whether each founder's stats should carry the company credit that Erick's slide now has). Don't edit their slides' wording until that comes back — Erick's slide (5/8) has been through this pass and is done.
