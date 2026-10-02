@@ -43,5 +43,5 @@ Each bio slide is a two-column `.bio` block — left column is the identity plus
 
 ## Before you send this to anyone
 
-- `hello@lhapartners.com` on the closing slide is a **placeholder** — swap in a live inbox, or make sure the domain and mailbox exist.
+- The closing slide routes to `hello.lhapartners@gmail.com` (mailto link) — the live inbox for enquiries.
 - Founder metrics are drawn from the founders' CVs. Confirm anything you would not want to defend in a room.
